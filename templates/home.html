@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+<body>
+
+    <div class="h0">
+        <div id="h4">
+        <img id="h3" src="{{ url_for('static', filename='img/logo.png') }}" >
+         </div>
+         <div id="h5" >
+
+        <a id="h2" href="/home">Home</a>
+        <a id="h2" href="/">Error detection</a>
+        <a id="h2" href="/aboutus">About us</a>
+        <a id="h2" href="/signup">Sign up</a>
+       
+        <a style="background-color:  #2EA99F;padding: 10px;border: none;" id="h2" href="/signin">Sign in</a>
+
+       
+           
+    </div>
+
+    </div>
+    <div class="animated-heading-container">
+        <div class="animated-heading">
+          <h1>Semantic Error Detection</h1>
+        </div>
+      </div>
+
+    <div style="margin: 100px;">
+
+
+    <p>
+      Welcome to Semantic Error Detection, your premier destination for comprehensive writing assistance. Our innovative tool transcends traditional grammar and spelling checks, delving deep into the coherence and logic of your text to ensure it resonates effectively with your audience. From essays to emails to reports, our advanced analysis empowers you to communicate with clarity and confidence. With an intuitive user interface and a vibrant community of language enthusiasts, we provide the support and resources you need to continuously refine your writing skills. Start your journey toward clearer, more impactful communication today with Semantic Error Detection.
+        
+        </p>
+
+    </div>
+    
+    <button id="h9" onclick="window.location.href = '/';">Lets start</button>
+
+
+
+
+    <br>
+     <br>
+     <br>
+
+     <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>"Empower your written communication with SemanticSense – harnessing NLP and ontology for seamless semantic error detection and correction."</p>
+        </div>
+        <div class="footer-column">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/">Error Detection</a></li>
+            <li><a href="/aboutus">About us </a></li>
+            <li><a href="/signup">Sign up</a></li>
+            <li><a href="/terms">Terms and Condition </a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <a href="mailto:contact@semanticerrordetection.com">contact@semanticerrordetection.com</a>
+          
+        </div>
+        <div class="footer-column">
+          
+          <img style="width: 70px;" src="{{ url_for('static', filename='img/logo.png') }}" alt="Company Logo">
+        </div>
+      </div>
+    </footer>
+
+    
+    </body>
+</html>

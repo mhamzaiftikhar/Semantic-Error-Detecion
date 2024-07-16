@@ -1,0 +1,7 @@
+Flask
+werkzeug
+python-dotenv
+pymongo
+google-generativeai
+gunicorn
+

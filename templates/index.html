@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fyp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .textbox {
+            padding: 10px;
+            width: 60%;
+            max-width: 500px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #btn {
+            background-color: #2EA99F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        #btn:hover {
+            background-color: #258b87;
+        }
+        #generated-output {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 40px auto 20px auto;
+            width: 80%;
+            max-width: 600px;
+        }
+        #generated-output h3 {
+            color: #f39c12;
+        }
+        #generated-output p {
+            font-size: 1.2em;
+            line-height: 1.6em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="h0">
+        <div id="h4">
+        <img id="h3" src="{{ url_for('static', filename='img/logo.png') }}">
+        </div>
+        <div id="h5">
+        <a id="h2" href="/home">Home</a>
+        <a id="h2" href="/">Error detection</a>
+        <a id="h2" href="/aboutus">About us</a>
+        <a id="h2" href="/signup">Sign up</a>
+        <a style="background-color: #2EA99F; padding: 10px; border: none;" id="h2" href="/signin">Sign in</a>
+        </div>
+    </div>
+
+    <div class="animated-heading-container">
+        <div class="animated-heading">
+          <h1>How can I help you today?</h1>
+        </div>
+    </div>
+
+    <br><br>
+    <div style="text-align: center; margin-top: 50px;">
+        <form action="/generate" method="post">
+            <input type="text" name="text" class="textbox" placeholder="Enter text here">
+            <br>
+            <button style="margin: 0 auto 150px auto;" id="btn" type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="result" style="color: white; text-align: center;">
+        {% if result %}
+            <h2>{{ result }}</h2>
+        {% endif %}
+    </div>
+    <div id="generated-output">
+      {% if generated_output %}
+          <h3>Input Text:</h3><br>
+          <h4>{{ input_text }}</h4><br>
+          <h3>Semantically this statement is correct:</h3><br>
+          <h4>{{ generated_output }}</h4>
+      {% endif %}
+    </div>
+  
+    <br><br><br>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>"Empower your written communication with SemanticSense – harnessing NLP and ontology for seamless semantic error detection and correction."</p>
+        </div>
+        <div class="footer-column">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/">Error Detection</a></li>
+            <li><a href="/aboutus">About us </a></li>
+            <li><a href="/signup">Sign up</a></li>
+            <li><a href="/terms">Terms and Condition </a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <a href="mailto:contact@semanticerrordetection.com">contact@semanticerrordetection.com</a>
+        </div>
+        <div class="footer-column">
+          <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Company Logo">
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

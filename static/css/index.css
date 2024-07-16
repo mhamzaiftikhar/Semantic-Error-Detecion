@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    
+}
+body{
+    background-color: #212121;
+}
+
+.h0{
+    background-color: #171717;
+    display: flex;
+    padding: 15px;
+
+}
+#h2{
+    color: #ECECEC;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 80px;
+
+    
+}
+#h3{
+    width: 60px;
+    height: auto;
+    margin-left: 30px;
+}
+#h5{
+    margin-left: 600px;
+    margin-top: 17px;
+}
+#h4{
+    margin-left: 80px;
+}
+h1{
+    text-align: center;
+    color: #ECECEC;
+    font-size: 40px;
+    margin-top: 180px;
+
+}
+
+    
+      
+
+
+
+
+.textbox {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid  #424242;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #212121;
+    color: white;
+    
+  }
+
+  .textbox:focus {
+    border-color: #424242;
+  }
+  #btn{
+    padding: 10px;
+    background-color: #2EA99F;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    margin-left: 570px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right:30px;
+    margin-bottom: 100px;
+
+    
+  }
+
+  p{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+  }
+  #h9{
+
+    background-color: #2EA99F;
+    padding:10px ;
+    border: none;
+    color: white;
+    margin-left: 550px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 100px;
+
+
+
+  }
+  #heading_home{
+    text-align: center;
+    color: #ECECEC;
+    font-size: 30px;
+    margin-top: 100px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .container {
+    background-color:#171717;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid  #424242;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #2EA99F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+  
+
+
+
+
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-content {
+    background-color: #171717;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-content input[type="text"],
+.form-content input[type="password"],
+.form-content input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #171717;
+    
+    border: 1px solid  #424242;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-content input[type="submit"] {
+    background-color: #2EA99F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-content input[type="submit"]:hover {
+    background-color:  #2EA99F;
+}
+
+.signin-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+.animated-heading-container {
+    animation: slideIn 1.5s ease-in-out infinite alternate;
+  }
+
+  .animated-heading {
+    font-size: 30px;
+    color: #333;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+
+
+
+
+
+
+  footer {
+    background-color:#171717;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 20px;
+    margin:40px ;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+  }
+  
