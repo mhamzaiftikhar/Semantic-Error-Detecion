@@ -101,6 +101,32 @@
             color: #ecf0f1;
             margin: 0;
         }
+
+        /* Media query for tablets and small desktops */
+        @media (max-width: 768px) {
+            .form-container {
+                max-width: 90%; /* Adjust width for smaller screens */
+                padding: 20px;
+            }
+            .form-container input[type="text"],
+            .form-container input[type="password"],
+            .form-container input[type="submit"] {
+                font-size: 0.9em; /* Reduce font size */
+            }
+        }
+
+        /* Media query for smartphones */
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 15px;
+            }
+            .form-container input[type="text"],
+            .form-container input[type="password"],
+            .form-container input[type="submit"] {
+                padding: 12px; /* Further reduce padding */
+                font-size: 0.8em; /* Reduce font size */
+            }
+        }
     </style>
 </head>
 <body>
